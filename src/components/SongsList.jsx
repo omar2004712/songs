@@ -9,9 +9,9 @@ function SongsList({ songs, selectSong }) {
   const renderedSongs = songs.map((song) => (
     <div
       key={song.title}
-      className="items-center group flex font-semibold hover:bg-gray-100 p-4 rounded"
+      className="items-center flex font-semibold hover:bg-gray-100 p-4 rounded"
     >
-      <h1 className="group-hover:text-[19px] text-lg flex-1">{song.title}</h1>
+      <h1 className="text-lg flex-1">{song.title}</h1>
       <button
         type="button"
         onClick={() => selectSong(song)}
