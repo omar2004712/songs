@@ -1,10 +1,11 @@
+import '../styles/index.css';
 import React from 'react';
 import SongsList from './SongsList';
 
 export default function App() {
   return (
-    <h1>
+    <div className="p-2 grid grid-cols-2">
       <SongsList />
-    </h1>
+    </div>
   );
 }
